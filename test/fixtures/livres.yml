@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  titre: MyString
+  annee: 1
+  editeur: MyString
+  ecrivain: MyString
+  nbexemplaires: 1
+
+two:
+  titre: MyString
+  annee: 1
+  editeur: MyString
+  ecrivain: MyString
+  nbexemplaires: 1

@@ -1,0 +1,31 @@
+<h1>Listing livres</h1>
+
+<table>
+  <tr>
+    <th>Titre</th>
+    <th>Annee</th>
+    <th>Editeur</th>
+    <th>Ecrivain</th>
+    <th>Nbexemplaires</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @livres.each do |livre| %>
+  <tr>
+    <td><%= livre.titre %></td>
+    <td><%= livre.annee %></td>
+    <td><%= livre.editeur %></td>
+    <td><%= livre.ecrivain %></td>
+    <td><%= livre.nbexemplaires %></td>
+    <td><%= link_to 'Show', livre %></td>
+    <td><%= link_to 'Edit', edit_livre_path(livre) %></td>
+    <td><%= link_to 'Destroy', livre, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Livre', new_livre_path %>
